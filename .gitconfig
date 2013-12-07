@@ -1,0 +1,6 @@
+[user]
+	name = jesse
+	email = number.dot.ten@gmail.com
+
+[alias]
+        shoot = push origin --delete #delete remote branch
