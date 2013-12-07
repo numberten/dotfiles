@@ -1,0 +1,10 @@
+background "#222222"
+
+#geometry 72x25-0+0
+geometry 4x1-275+0
+max_geometry 4x1
+icon_size 24
+#ignore_icon_resize true
+icon_gravity NE
+
+
