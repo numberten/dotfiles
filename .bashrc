@@ -113,3 +113,5 @@ git() { if [[ $@ == "ls" ]]; then command git log --pretty=format:"%C(yellow)%h%
 
 #cabal bin to $PATH
 export PATH=/home/jesse/.cabal/bin:$PATH
+#script dir to $PATH
+export PATH=/home/jesse/scripts:$PATH
