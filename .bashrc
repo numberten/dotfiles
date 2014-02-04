@@ -112,6 +112,6 @@ alias lock="gnome-screensaver-command -l"
 git() { if [[ $@ == "ls" ]]; then command git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate; else command git "$@"; fi; }
 
 #cabal bin to $PATH
-export PATH=/home/jesse/.cabal/bin:$PATH
+export PATH=~/.cabal/bin:$PATH
 #script dir to $PATH
-export PATH=/home/jesse/scripts:$PATH
+export PATH=~/scripts:$PATH
