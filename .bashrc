@@ -110,6 +110,10 @@ alias csel="xsel -b"
 alias lock="gnome-screensaver-command -l"
 #git log alias
 git() { if [[ $@ == "ls" ]]; then command git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate; else command git "$@"; fi; }
+#git tree visualization aliases
+alias gg='git log --graph --decorate --abbrev-commit --oneline --branches --color --remotes'
+alias ggs='git log --graph --decorate --abbrev-commit --oneline --branches --color --remotes --simplify-by-decoration'
+
 
 #cabal bin to $PATH
 export PATH=~/.cabal/bin:$PATH
