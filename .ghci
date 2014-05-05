@@ -1,4 +1,4 @@
-:set prompt "ghci> "
+:set prompt "λ> "
 :set -i.:..  
 :def hoogle \s -> return $ ":! hoogle --count=15 \"" ++ s ++ "\""
 :def doc \x -> return $ ":!hoogle --info \"" ++ x ++ "\""
