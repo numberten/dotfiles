@@ -25,8 +25,6 @@ let g:solarized_visibility="normal"
 set background=dark
 colorscheme solarized
 
-
-
 " Necessary for lots of cool vim things, according to that one guy!
 set nocompatible
 
@@ -79,6 +77,9 @@ nnoremap Y y$"
 
 " Opens a new tab with the current buffer's path
 map <leader>t :tabedit <c-r>=expand("%:p:h")<cr>/<CR>
+
+" Adds line numbers to directory listings
+let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 
 " Incremental searching
 set incsearch
