@@ -77,6 +77,9 @@ nnoremap JJJJ <Nop>
 " Make Y consistent with C and D
 nnoremap Y y$"
 
+" Opens a new tab with the current buffer's path
+map <leader>t :tabedit <c-r>=expand("%:p:h")<cr>/<CR>
+
 " Incremental searching
 set incsearch
 
