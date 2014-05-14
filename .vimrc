@@ -92,9 +92,3 @@ set nohidden
 
 " Set off the other paren
 highlight MatchParen ctermbg=4
-"}}}
-"
-let g:vimclojure#HighlightBuiltins = 1
-let g:vimclojure#ParenRainbow = 1
-helptags ~/.vim/bundle/VimClojure/doc/
-
