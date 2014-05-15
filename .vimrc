@@ -37,7 +37,7 @@ set grepprg=grep\ -nH\ $*
 " Makes the linenumber column background colour transparent
 hi LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE 
 
-" Autoindent :D
+" Autoindent
 set autoindent
 
 " Spaces > tabs
@@ -49,7 +49,7 @@ set shiftwidth=2
 set softtabstop=2
 
 " Except in python
-autocmd FileType python  set shiftwidth=4|set softtabstop=4
+autocmd FileType python set shiftwidth=4|set softtabstop=4
 
 " English for spell checking, but don't use spellcheck by default
 if version >= 700
@@ -92,3 +92,6 @@ set nohidden
 
 " Set off the other paren
 highlight MatchParen ctermbg=4
+
+" Rainbow parens for clojure
+au VimEnter * RainbowParenthesesToggle
