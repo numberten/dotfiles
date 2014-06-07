@@ -113,7 +113,8 @@ git() { if [[ $@ == "ls" ]]; then command git log --pretty=format:"%C(yellow)%h%
 #git tree visualization aliases
 alias gg='git log --graph --decorate --abbrev-commit --oneline --branches --color --remotes'
 alias ggs='git log --graph --decorate --abbrev-commit --oneline --branches --color --remotes --simplify-by-decoration'
-
+#how many cores do I have?
+alias cores='grep -c processor /proc/cpuinfo'
 
 #cabal bin to $PATH
 export PATH=~/.cabal/bin:$PATH
