@@ -95,3 +95,6 @@ highlight MatchParen ctermbg=4
 
 " Rainbow parens for clojure
 au VimEnter * RainbowParenthesesToggle
+
+" Maps Coquille commands to CoqIDE default key bindings
+au FileType coq call coquille#CoqideMapping()
