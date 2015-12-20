@@ -3,4 +3,7 @@
 	email = number.dot.ten@gmail.com
 
 [alias]
+        birth = push -u origin #pushes branch to remote
         shoot = push origin --delete #delete remote branch
+[push]
+	default = matching
