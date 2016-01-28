@@ -116,6 +116,8 @@ alias gg='git log --graph --decorate --abbrev-commit --oneline --branches --colo
 alias ggs='git log --graph --decorate --abbrev-commit --oneline --branches --color --remotes --simplify-by-decoration'
 #how many cores do I have?
 alias cores='grep -c processor /proc/cpuinfo'
+#great magento massacre of 2016 -- never forget
+alias tar="tar -k"
 
 #cabal bin to $PATH
 export PATH=~/.cabal/bin:$PATH
