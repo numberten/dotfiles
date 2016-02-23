@@ -14,11 +14,11 @@ filetype plugin indent on
 
 " Aesthetics (solarized woohoo)
 set t_Co=256
-let g:solarized_termcolors=256 
-let g:solarized_termtrans=1 
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
 let g:solarized_bold=1
 let g:solarized_underline=0
-let g:solarized_italic=1 
+let g:solarized_italic=1
 let g:solarized_contrast="normal"
 let g:solarized_visibility="normal"
 
@@ -35,7 +35,7 @@ filetype plugin on
 set grepprg=grep\ -nH\ $*
 
 " Makes the linenumber column background colour transparent
-hi LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE 
+hi LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE
 
 " Autoindent
 set autoindent
@@ -50,6 +50,8 @@ set softtabstop=2
 
 " Except in python
 autocmd FileType python set shiftwidth=4|set softtabstop=4
+" Except in rust
+autocmd FileType rust set shiftwidth=4|set softtabstop=4
 
 " English for spell checking, but don't use spellcheck by default
 if version >= 700
